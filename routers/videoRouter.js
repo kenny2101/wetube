@@ -5,15 +5,15 @@ import {
   upload,
   videoDetail,
   videos,
-} from "../controllers/videoController copy";
+} from "../controllers/videoController";
 import routes from "../routes";
 
-const userRouter = express.Router();
+const videoRouter = express.Router();
 
-userRouter.get(routes.videos, videos);
-userRouter.get(routes.upload, upload);
-userRouter.get(routes.videoDetail, videoDetail);
-userRouter.get(routes.editVideo, editVideo);
-userRouter.get(routes.deleteVideo, deleteVideo);
+videoRouter.get(routes.videos, videos);
+videoRouter.get(routes.upload, upload);
+videoRouter.get(routes.videoDetail, videoDetail);
+videoRouter.get(routes.editVideo, editVideo);
+videoRouter.get(routes.deleteVideo, deleteVideo);
 
-export default userRouter;
+export default videoRouter;
